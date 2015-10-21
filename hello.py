@@ -8,9 +8,10 @@ app = Flask(__name__)
 # When running this app on the local machine, default the port to 8080
 port = int(os.getenv('VCAP_APP_PORT', 8080))
 address = (os.getenv('CF_INSTANCE_IP'))
+
 @app.route('/')
 def hello_world():
-    return 'Hello World! I am running on port ' + str(port), str(address)
+    return 'Hello World! I am running on address:port ' + str(address, port)
      
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
