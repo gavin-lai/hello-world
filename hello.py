@@ -10,7 +10,7 @@ port = int(os.getenv('VCAP_APP_PORT', 8080))
 address = (os.getenv('CF_INSTANCE_IP'))
 @app.route('/')
 def hello_world():
-    return 'Hello World! I am running on port ' + str(port)
-    print "running at %d" % (address) 
+    return 'Hello World! I am running on port ' + str(port), str(address)
+     
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
