@@ -11,7 +11,8 @@ address = (os.getenv('CF_INSTANCE_IP'))
 
 @app.route('/')
 def hello_world():
-    return 'Hello World! I am running on address:port ' + format(address, port)
+    return 'Hello World! I am running on address:port ' + str(address)
+print ("on port:", port)
      
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
