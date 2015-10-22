@@ -17,7 +17,9 @@ Replace myapp name with the name of your app (ex. hello-world)
 
 [Deploy to Appfog](https://www.ctl.io/guides/appfog/deploy-an-application-to-appfog/)
 
-
+To remove the app, login to Appfog using the cf command from the appfog page of the control portal:
+Example: cf login -a https://api.useast.appfog.ctl.io -o ACCOUNT -u userid
+Pick the space that the application is deployed and 'cf delete myappname'
 
 license
 ================================================================================
