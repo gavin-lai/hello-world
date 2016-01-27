@@ -11,7 +11,7 @@ address = (os.getenv('CF_INSTANCE_IP'))
 
 @app.route('/')
 def hello_world():
-    return 'Hello from Appfog World! I am running on address:port ' + str(address) + str (':') + str(port)
+    return 'Hello from Appfog World (version 3)! I am running on address:port ' + str(address) + str (':') + str(port)
 
      
 if __name__ == '__main__':
