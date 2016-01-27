@@ -101,7 +101,7 @@ following:
 
 Or
 
-![browser test](media/image16.png)
+![Browser test](media/image16.png)
 
 Depending on the number of instances that were deployed, the responses
 will come back from the same number of hosts.
@@ -127,5 +127,7 @@ application will be deployed in.
 ![CL3](media/image19.png)
 
 Select the space and from the prompt type ‘cf push –i 2’ (I is the
-number of instances). Once completed, the prompt will be returned and
+number of instances, m is for memory). Once completed, the prompt will be returned and
 the URL is provided for testing.
+
+![CL4](media/image20.gif)
